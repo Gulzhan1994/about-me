@@ -1,0 +1,245 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  color: #939393;
+}
+h1 {
+  font-weight: 600;
+}
+h2 {
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+/*Сброс стилей*/
+a {
+  color: inherit;
+  text-decoration: none;
+}
+ul {
+  padding-left: 0;
+}
+li {
+  font-size: 14px;
+  list-style-type: none;
+  font-weight: 600;
+  display: inline-block;
+  padding: 20px 20px 20px 0;
+}
+.header__content {
+  padding-bottom: 40px;
+}
+.header__about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.footer {
+  margin: 0;
+}
+.footer__about {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+.first-name {
+  font-weight: 300;
+  font-size: 2em;
+}
+.first-name span {
+  display: block;
+  color: #f8bb10;
+  text-transform: uppercase;
+}
+.list {
+  border: none;
+  border-top: 2px solid #c9c9c9;
+  padding-top: 20px;
+  margin: 0;
+}
+.list-text {
+  font-weight: 300;
+}
+.list-text a:hover {
+  text-decoration: underline;
+}
+.block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 48%;
+  margin-right: 15px;
+}
+.block-description p {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 30px;
+}
+.block-num {
+  margin-right: 20px;
+  font-weight: 600;
+  color: #f8bb10;
+}
+.block__subtitle {
+  padding-left: 0;
+  text-transform: uppercase;
+  color: #727272;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.avatar__block {
+  display: table;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.avatar-img {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+.avatar__img {
+  max-width: 180px;
+  width: 100%;
+  border-radius: 50%;
+}
+.name {
+  margin: 100px 0 0;
+}
+.last-name {
+  font-weight: 600;
+}
+.left-block {
+  vertical-align: top;
+  background-color: #f8f8f8;
+  width: 30%;
+  padding: 35px 40px;
+  text-align: right;
+}
+.right-block {
+  width: 70%;
+  padding: 35px 40px;
+  background-color: #fcfcfc;
+}
+.white-block {
+  background-color: #FFFFFF;
+}
+.gray-block,
+.avatar__block {
+  background-color: #fcfcfc;
+}
+.social__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.social__button a {
+  display: inline-block;
+  margin-left: 10px;
+}
+.social__button a img {
+  width: 100%;
+  height: 30px;
+  max-width: 40px;
+}
+.social__button i {
+  font-size: 26px;
+  color: #bab9b9;
+}
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.contact-list {
+  border-top: none;
+  border-bottom: 2px solid #c9c9c9;
+  padding-top: 0;
+}
+.section .right-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+/*Медиа запросы*/
+@media (max-width: 1250px) {
+  .block {
+    width: 100%;
+  }
+  .name {
+    margin-top: 30px;
+  }
+}
+@media (max-width: 780px) {
+  .right-block {
+    padding: 20px;
+  }
+  .left-block {
+    padding: 20px;
+  }
+}
+@media (max-width: 650px) {
+  .row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .right-block {
+    width: 100%;
+  }
+  .left-block {
+    width: 100%;
+    text-align: left;
+  }
+  .first-name {
+    font-size: 1.5em;
+  }
+  .social__button a img {
+    max-width: 30px;
+    height: 25px;
+  }
+  .avatar__img {
+    max-width: 130px;
+  }
+  .name {
+    margin-top: 10px;
+  }
+}
+@media (max-width: 450px) {
+  .header__about {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .social__button a {
+    margin-left: 0px;
+    margin-right: 10px;
+  }
+  .social__buttons {
+    margin-top: 20px;
+  }
+  .list li {
+    display: block;
+    padding: 0 0 20px 0;
+  }
+}
+/*# sourceMappingURL=style.css.map */
